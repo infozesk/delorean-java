@@ -7,7 +7,21 @@ package com.zesk;
  */
 public class Delorean
 {
+    private int speed;
 
+    /*
+     * @param speed: The speed in m/s
+     */
+    public void setSpeed(int speed){
+        this.speed = speed;
+    }
+
+    /*
+     * @return speed: The speed in m/s
+     */
+    public int getSpeed(){
+        return this.speed;
+    }
 
     public static void main( String[] args )
     {
@@ -23,7 +37,7 @@ public class Delorean
         //delo.set_target_date("05/11/1955");
 
         System.out.println("Doc accelere jusqu a 89mph");
-        //delo.set_speed(89);
+        delo.setSpeed(89);
 
         System.out.println("####### VOYAGE DANS LE TEMPS #########");
         //System.out.println("Nous sommes le %s" % delo.get_date());
