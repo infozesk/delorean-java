@@ -38,4 +38,14 @@ public class DeloreanTest
         Delorean.main(args);
         new Delorean();
     }
+
+    public void testDeloreanSpeed()
+    {
+        Delorean delo = new Delorean();
+        assertEquals(0, delo.getSpeed());
+        for(int speed=0; speed<100; speed++){
+            delo.setSpeed(speed);
+            assertEquals(speed, delo.getSpeed());
+        }
+    }
 }
