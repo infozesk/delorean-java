@@ -56,4 +56,16 @@ public class DeloreanTest
         delo.insertPlutonium();
         assertTrue(delo.hasPlutonium());
     }
+
+    public void testDeloreanDate()
+    {
+        Delorean delo = new Delorean();
+        assertEquals(2017, delo.getYear());
+        delo.setYear(1955);
+        assertEquals(1955, delo.getYear());
+        assertEquals(0, delo.getTargetYear());
+        delo.setTargetYear(1955);
+        assertEquals(1955, delo.getTargetYear());
+
+    }
 }
