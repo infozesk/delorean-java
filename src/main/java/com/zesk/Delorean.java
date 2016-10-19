@@ -8,7 +8,7 @@ package com.zesk;
 public class Delorean
 {
     private int speed;
-    private boolean plutonium;
+    private boolean plutonium = false;
 
     /*
      * @param speed: The speed in m/s

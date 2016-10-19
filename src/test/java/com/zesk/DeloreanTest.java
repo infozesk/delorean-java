@@ -48,4 +48,12 @@ public class DeloreanTest
             assertEquals(speed, delo.getSpeed());
         }
     }
+
+    public void testDeloreanPlutonium()
+    {
+        Delorean delo = new Delorean();
+        assertFalse(delo.hasPlutonium());
+        delo.insertPlutonium();
+        assertTrue(delo.hasPlutonium());
+    }
 }
