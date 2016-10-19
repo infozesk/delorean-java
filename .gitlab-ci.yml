@@ -1,0 +1,21 @@
+image: maven:latest
+
+stages:
+  - compile
+  - test
+  - coverage
+
+compile_job:
+  stage: compile
+  script: mvn compile
+
+
+test_job:
+  stage: test
+  script: mvn test
+
+coverage_job:
+  stage: coverage
+  script:
+    - mvn cobertura:cobertura
+    - cat target/site/cobertura/frame-sourcefiles-com.zesk.html | grep App
