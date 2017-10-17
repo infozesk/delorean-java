@@ -2,8 +2,8 @@ image: maven:3.5
 
 stages:
   - compile
-  - test
   - coverage
+  - test
 
 compile_job:
   stage: compile
