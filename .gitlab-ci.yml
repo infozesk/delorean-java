@@ -18,4 +18,4 @@ coverage_job:
   stage: coverage
   script:
     - mvn cobertura:cobertura
-    - cat target/site/cobertura/frame-sourcefiles-com.zesk.html | grep App
+    - cat target/site/cobertura/frame-sourcefiles-com.zesk.html | grep Delorean

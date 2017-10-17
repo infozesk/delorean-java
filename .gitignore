@@ -3,3 +3,7 @@
 __pycache__
 htmlcov
 target
+.vscode
+.settings
+.classpath
+.project
